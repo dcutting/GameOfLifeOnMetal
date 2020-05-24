@@ -1,2 +1,3 @@
 # GameOfLifeOnMetal
-Swift Playground implementing Game of Life one Metal, companion to blog post https://cutting.io/posts/game-of-life-on-metal/
+
+This is a Swift Playground implementing the Game of Life on Metal, and is a companion playground for the blog post: https://cutting.io/posts/game-of-life-on-metal/
