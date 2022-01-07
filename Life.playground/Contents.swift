@@ -35,10 +35,7 @@ class Renderer: NSObject {
                                      length: dataSize,
                                      options: [])!
     
-    let file = Bundle.main.path(forResource: "Shaders", ofType: "metal")!
-    let source = try! String(contentsOfFile: file, encoding: .utf8)
-
-    let library = try! device.makeLibrary(source: source, options: nil)
+    let library = device.makeDefaultLibrary()!
     let vertexFn = library.makeFunction(name: "vertex_shader")
     let fragmentFn = library.makeFunction(name: "fragment_shader")
     
